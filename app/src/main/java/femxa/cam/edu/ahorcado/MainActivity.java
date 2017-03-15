@@ -28,18 +28,18 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i<longi_palabra; i++)*/
         //{
             LayoutInflater layoutInflater = MainActivity.this.getLayoutInflater(); //o LayoutInflater.from(a)
-            View v1 = layoutInflater.inflate(R.layout.panel,lugar_inflado, false);
+            View v1 = layoutInflater.inflate(R.layout.panel,lugar_inflado, true);
 
-            View v2 = layoutInflater.inflate(R.layout.panel,lugar_inflado, false);
-            /*layoutInflater.inflate(R.layout.panel,lugar_inflado, true);
+            /*View v2 = layoutInflater.inflate(R.layout.panel,lugar_inflado, false);*/
             layoutInflater.inflate(R.layout.panel,lugar_inflado, true);
-*/
-        View[] array = {
+            /*layoutInflater.inflate(R.layout.panel,lugar_inflado, true);*/
+
+        /*View[] array = {
         lugar_inflado.addView(v1),
-        lugar_inflado.addView(v2)}
+        lugar_inflado.addView(v2)}*/
 
 
-        lugar_inflado.addChildrenForAccessibility();
+        //lugar_inflado.addChildrenForAccessibility();
         mostrarLayout(findViewById(R.id.activity_main));
         //}
 
