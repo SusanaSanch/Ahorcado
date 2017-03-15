@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="categorias">
+        <item>@array/Animales</item>
+        <item>@array/Deportes</item>
+        <item>@array/Palabras_Ñ</item>
+        <item>@array/Famosos</item>
+        <item>@array/Frutas</item>
+        <item>@array/Lugares</item>
+        <item>@array/Peliculas</item>
+
+    </array>
+
+    <string-array name="Animales"></string-array>
+    <string-array name="Deportes"></string-array>
+    <string-array name="Palabras_Ñ"></string-array>
+    <string-array name="Famosos"></string-array>
+    <string-array name="Frutas"></string-array>
+    <string-array name="Lugares"></string-array>
+    <string-array name="Peliculas"></string-array>
+
+
+
+</resources>
