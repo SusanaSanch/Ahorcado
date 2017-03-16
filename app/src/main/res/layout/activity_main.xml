@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="femxa.cam.edu.ahorcado.MainActivity"
-    android:layout_gravity="center"
     android:orientation="horizontal"
     android:weightSum="1">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="200dp"
+    <TableRow
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/lugar_inflado"
-        android:orientation="horizontal">
-        </LinearLayout>
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+        </TableRow>
 
-</LinearLayout>
+    <TableRow
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/lugar_inflado2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+    </TableRow>
+
+    <TableRow
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/lugar_inflado3"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+    </TableRow>
+
+    <TableRow
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/lugar_inflado4"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+    </TableRow>
+
+
+</TableLayout>

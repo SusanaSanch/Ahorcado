@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/ll_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center">
 
-    <EditText
-        android:layout_marginLeft="20dp"
-        android:layout_width="wrap_content"
-        android:text="a"
-        android:layout_height="wrap_content"
-        android:id="@+id/letra1"/>
-
+        <EditText
+            android:layout_width="25dp"
+            android:layout_margin="5dp"
+            android:editable="false"
+            android:layout_height="50dp"
+            android:id="@+id/letra1"
+            android:textSize="20sp" />
 </LinearLayout>
 
 
