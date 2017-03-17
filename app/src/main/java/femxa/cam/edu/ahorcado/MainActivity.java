@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             if (rowLugarInflado3 != null) {
                 int cont_aux2 = 0;
                 cont_aux2 = cont_aux;
-                for (int i = 0; i < (rowLugarInflado2.getChildCount()); i++) {
+                for (int i = 0; i < (rowLugarInflado3.getChildCount()); i++) {
                     ViewGroup linear = (ViewGroup) rowLugarInflado3.getChildAt(i);
                     EditText et = (EditText) linear.getChildAt(0);
                     et.setId(cont_aux);
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             if (rowLugarInflado4 != null) {
                 int cont_aux2 = 0;
                 cont_aux2 = cont_aux;
-                for (int i = 0; i < (rowLugarInflado2.getChildCount()); i++) {
+                for (int i = 0; i < (rowLugarInflado4.getChildCount()); i++) {
                     ViewGroup linear = (ViewGroup) rowLugarInflado4.getChildAt(i);
                     EditText et = (EditText) linear.getChildAt(0);
                     et.setId(cont_aux);
@@ -187,15 +187,14 @@ public class MainActivity extends AppCompatActivity {
                     if(cadena.charAt(i)==' ')
                     {
                         pos_palabra++;
+                        View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado, true);
                         if (lista_palabra[pos_palabra].length() + caracteres_linea_actual < 10)
                         {
-
-                            View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado, true);
                             caracteres_linea_actual++;
                             Log.d("MENSAJE", "if Case 1: letra " + cadena.charAt(i) + ", linea " + n_linea);
-                        } else
+                        }
+                        else
                             {
-                                View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado2, true);
                                 caracteres_linea_actual = 1;
                                 n_linea = 2;
                                 Log.d("MENSAJE", "Else Case 1: letra " + cadena.charAt(i) + ", linea " + n_linea);
@@ -214,12 +213,12 @@ public class MainActivity extends AppCompatActivity {
                     if(cadena.charAt(i)==' ')
                     {
                         pos_palabra++;
+                        View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado2, true);
                         if (lista_palabra[pos_palabra].length() + caracteres_linea_actual < 10) {
-                            View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado2, true);
+
                             caracteres_linea_actual++;
                             Log.d("MENSAJE", "Case 2: letra " + cadena.charAt(i) + ", linea " + n_linea);
                         } else {
-                            View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado3, true);
                             caracteres_linea_actual = 1;
                             n_linea = 3;
                             Log.d("MENSAJE", "Else Case 2: letra " + cadena.charAt(i) + ", linea " + n_linea);
@@ -240,15 +239,16 @@ public class MainActivity extends AppCompatActivity {
                     {
                         pos_palabra++;
 
+                        View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado3, true);
                         if(lista_palabra[pos_palabra].length()+caracteres_linea_actual<10)
                         {
-                            View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado3, true);
+
                             caracteres_linea_actual++;
                             Log.d("MENSAJE", "Case 3: letra " + cadena.charAt(i) + ", linea " + n_linea);
                         }
                         else
                         {
-                            View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado4, true);
+
                             caracteres_linea_actual = 1;
                             n_linea = 4;
                             Log.d("MENSAJE", "Else Case 3: letra " + cadena.charAt(i) + ", linea " + n_linea);
@@ -269,9 +269,9 @@ public class MainActivity extends AppCompatActivity {
                     {
                         pos_palabra++;
 
+                        View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado4, true);
                         if(lista_palabra[pos_palabra].length()+caracteres_linea_actual<10)
                         {
-                            View v1 = layoutInflater.inflate(R.layout.panel, lugar_inflado4, true);
                             caracteres_linea_actual++;
                             Log.d("MENSAJE", "Case 4: letra " + cadena.charAt(i) + ", linea " + n_linea);
                         }
@@ -286,7 +286,6 @@ public class MainActivity extends AppCompatActivity {
                         caracteres_linea_actual++;
                         Log.d("MENSAJE", "Case 4: letra " + cadena.charAt(i) + ", linea " + n_linea);
                     }
-
 
                     break;
 
@@ -379,7 +378,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //dibujarPanel("star wars el despertar de la fuerza");
-        dibujarPanel("La vida es bella");
+        dibujarPanel("La fruta de la pasion");
         TableRow fila1 = (TableRow)findViewById(R.id.lugar_inflado);
         TableRow fila2 = (TableRow)findViewById(R.id.lugar_inflado2);
         TableRow fila3 = (TableRow)findViewById(R.id.lugar_inflado3);
@@ -391,9 +390,9 @@ public class MainActivity extends AppCompatActivity {
         fila4 = (fila4.getChildCount() == 0) ? null : fila4;
 
         identificarEditText(fila1, fila2, fila3, fila4);
-        mostrarLetra("a", "La vida es bella");
-        mostrarLetra("e", "La vida es bella");
-        ocultarEspacios("La vida es bella");
+        mostrarLetra("a", "La fruta de la pasion");
+        mostrarLetra("n", "La fruta de la pasion");
+        ocultarEspacios("La fruta de la pasion");
 
 
     }
